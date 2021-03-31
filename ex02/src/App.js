@@ -9,7 +9,6 @@ class App extends Component {
 
   getMyStorage = () => {
     const myCookieData = document.cookie.replace(/([.*+?^=!:${}()|[\]/\\])/g, '\\$1');
-    // const myCookieData = document.cookie.valueOf.getItem('2021', 'Year');
      const myLocalStorageData = localStorage.getItem('Paragon');
      const mySessionStorageData = sessionStorage.getItem('frontend');
      return (myCookieData, myLocalStorageData, mySessionStorageData);
